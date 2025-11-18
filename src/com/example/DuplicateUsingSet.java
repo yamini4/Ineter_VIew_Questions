@@ -6,7 +6,7 @@ import java.util.Set;
 public class DuplicateUsingSet {
 	public static void main(String[] args) {
 
-		String[] arr = { "red", "green", "red", "blue", "green", "red", "green", "red", "blue", "green" };
+		String[] arr = { "red", "green", "red", "blue", "green", "red", "green", "red", "green" };
 
 		Set<String> seen = new HashSet<>();
 		Set<String> duplicates = new HashSet<>();
