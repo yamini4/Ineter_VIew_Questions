@@ -1,0 +1,71 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Attach",
+            "request": "attach",
+            "hostName": "localhost",
+            "port": "<debug port of the debuggee>"
+        },
+
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "CalculateFrequencyUsingStreams",
+            "request": "launch",
+            "mainClass": "com.example.CalculateFrequencyUsingStreams",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
+            "name": "DuplicateUsingSet",
+            "request": "launch",
+            "mainClass": "com.example.DuplicateUsingSet",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
+            "name": "NoParamLmbdaExpression",
+            "request": "launch",
+            "mainClass": "com.example.NoParamLmbdaExpression",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
+            "name": "OneParamLambdaExpression",
+            "request": "launch",
+            "mainClass": "com.example.OneParamLambdaExpression",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
+            "name": "SolutionCode",
+            "request": "launch",
+            "mainClass": "com.example.SolutionCode",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
+            "name": "SyncsThreadExample",
+            "request": "launch",
+            "mainClass": "com.example.SyncsThreadExample",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
+            "name": "TestCifCountryCode",
+            "request": "launch",
+            "mainClass": "com.example.TestCifCountryCode",
+            "projectName": "InterviewPractice"
+        }
+    ]
+}
