@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+
 public class DuplicateUsingSet {
 	public static void main(String[] args) {
 
@@ -20,12 +21,17 @@ public class DuplicateUsingSet {
 		}
 		System.out.println("Duplicates:Using forEach");
 		duplicates.forEach(System.out::println);
-		
+
 		Set<String> seen1 = new HashSet<>();
 
 		Set<String> duplicates1 = Arrays.stream(arr).filter(n -> !seen1.add(n)).collect(Collectors.toSet());
 		System.out.println("Duplicates:Using stream");
 		duplicates1.forEach(System.out::println);
 
+		System.out.println(Arrays.stream(arr)
+				.collect(Collectors.groupingBy(e -> e, Collectors.counting())));
+
+		System.out.println(Arrays.stream(arr)
+				.collect(Collectors.groupingBy(e -> e.charAt(0))));
 	}
 }
