@@ -28,9 +28,11 @@ public class DuplicateUsingSet {
 		System.out.println("Duplicates:Using stream");
 		duplicates1.forEach(System.out::println);
 
+		// {red=4, green=4, blue=1}
 		System.out.println(Arrays.stream(arr)
 				.collect(Collectors.groupingBy(e -> e, Collectors.counting())));
 
+		// {b=[blue], r=[red, red, red, red], g=[green, green, green, green]}
 		System.out.println(Arrays.stream(arr)
 				.collect(Collectors.groupingBy(e -> e.charAt(0))));
 	}
