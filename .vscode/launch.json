@@ -6,12 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FindMissingValue",
+            "request": "launch",
+            "mainClass": "com.example.FindMissingValue",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
             "name": "Attach",
             "request": "attach",
             "hostName": "localhost",
             "port": "<debug port of the debuggee>"
         },
-
         {
             "type": "java",
             "name": "Current File",
