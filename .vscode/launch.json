@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "BasicJavaStreamSolutions",
+            "request": "launch",
+            "mainClass": "com.example.streamexample.BasicJavaStreamSolutions",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
             "name": "FindMissingValue",
             "request": "launch",
             "mainClass": "com.example.FindMissingValue",
