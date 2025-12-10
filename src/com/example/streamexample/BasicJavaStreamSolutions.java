@@ -1,7 +1,9 @@
 package com.example.streamexample;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -27,7 +29,13 @@ public class BasicJavaStreamSolutions {
 
         // Remove duplicate elements from int[]
         int[] listWithDup = { 1, 2, 3, 2, 4, 5, 1, 6, 4 };
-        Arrays.stream(listWithDup).distinct().forEach(System.out::print);
-        ;
+        Arrays.stream(listWithDup).distinct().forEach(n -> System.out.print(n + " "));
+
+        System.out.println();
+        // Sort int[] in descending order
+        List<Integer> nums = List.of(5, 12, 3, 19, 7, 1, 25, 9);
+        nums.stream().sorted(Comparator.reverseOrder()).forEach(n -> System.out.print(n + " "));
+
+        
     }
 }
