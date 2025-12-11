@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import java.util.stream.Stream;
 
 public class IntermediateJavaStreamSolutions {
     public static void main(String[] args) {
@@ -31,6 +32,17 @@ public class IntermediateJavaStreamSolutions {
 
         System.out.println(words.stream().collect(Collectors.groupingBy(e -> e.length())));
 
+        System.out.println(words.stream().collect(Collectors.groupingBy(e -> e.startsWith("A"))));
+
         System.out.println();
+
+        // Get numbers whose square is greater than 100
+        IntStream.of(5, 8, 11, 15, 3).filter(n -> n * n > 100).forEach(n -> System.out.print(n + " "));
+
+        // Sum of all even numbers
+        List<Integer> list = List.of(2, 5, 8, 11, 14, 17);
+        System.out.println(list.stream().filter(n -> n % 2 == 0).mapToInt(Integer::intValue).sum());
+
+        System.out.println(list.stream().filter(n -> n % 2 == 0).mapToInt(Integer::intValue).reduce(0, Integer::sum));
     }
 }
