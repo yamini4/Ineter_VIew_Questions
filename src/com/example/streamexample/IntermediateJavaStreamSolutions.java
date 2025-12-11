@@ -1,6 +1,7 @@
 package com.example.streamexample;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -55,8 +56,15 @@ public class IntermediateJavaStreamSolutions {
         // Count numbers divisible by 3 int[]
 
         List<Integer> listDivBy3 = List.of(3, 4, 9, 12, 15, 19, 21);
-        // listDivBy3.stream().collect(Collectors.groupingBy(n -> n % 3 == 0)).size();
+        System.out.println(listDivBy3.stream()
+                .filter(n -> n % 3 == 0)
+                .count());
         System.out.println(listDivBy3.stream().collect(Collectors.groupingBy(n -> n % 3 == 0)).size());
+
+        // Sort names by length String[]
+
+        List<String> namesArr = List.of("Syed", "Yamini", "Akhil", "Ravi");
+        namesArr.stream().sorted(Comparator.comparing(String::length)).forEach(System.out::println);
 
     }
 }
