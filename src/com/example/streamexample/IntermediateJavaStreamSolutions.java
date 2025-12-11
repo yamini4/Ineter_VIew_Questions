@@ -44,5 +44,19 @@ public class IntermediateJavaStreamSolutions {
         System.out.println(list.stream().filter(n -> n % 2 == 0).mapToInt(Integer::intValue).sum());
 
         System.out.println(list.stream().filter(n -> n % 2 == 0).mapToInt(Integer::intValue).reduce(0, Integer::sum));
+
+        System.out.println();
+
+        // Convert List<String> into List<Character> (first character)
+        List<String> items = List.of("Mango", "Orange", "Kiwi", "Grapes");
+        items.stream().map(n -> n.charAt(0)).forEach(n -> System.out.print(n + " "));
+
+        System.out.println();
+        // Count numbers divisible by 3 int[]
+
+        List<Integer> listDivBy3 = List.of(3, 4, 9, 12, 15, 19, 21);
+        // listDivBy3.stream().collect(Collectors.groupingBy(n -> n % 3 == 0)).size();
+        System.out.println(listDivBy3.stream().collect(Collectors.groupingBy(n -> n % 3 == 0)).size());
+
     }
 }
