@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IntermediateJavaStreamSolutions",
+            "request": "launch",
+            "mainClass": "com.example.streamexample.IntermediateJavaStreamSolutions",
+            "projectName": "InterviewPractice"
+        },
+        {
+            "type": "java",
             "name": "BasicJavaStreamSolutions",
             "request": "launch",
             "mainClass": "com.example.streamexample.BasicJavaStreamSolutions",
