@@ -29,4 +29,10 @@ public class EmployeeService {
 				new Employee(14, "Kiran", "IT", 59000, List.of("Python", "Django", "REST API")),
 				new Employee(15, "Ananya", "Finance", 75000, List.of("Investment", "Risk Analysis", "SAP")));
 	}
+
+	@Override
+	public String toString() {
+		return "EmployeeService [employees=" + employees + "]";
+	}
+
 }
