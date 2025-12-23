@@ -1,0 +1,13 @@
+id: 1
+firstName: John
+lastName: Doe
+email: john.doe@example.com
+phone: +1-555-123-4567
+address:
+  street: 123 Main St
+  city: Anytown
+  state: CA
+  zipCode: '12345'
+  country: USA
+dateOfBirth: '1990-01-01'
+isActive: true

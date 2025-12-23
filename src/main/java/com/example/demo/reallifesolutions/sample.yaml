@@ -1,0 +1,97 @@
+appConfig:
+  type: object
+  properties:
+    appName:
+      type: string
+      example: "MyApp"
+    version:
+      type: string
+      example: "1.0.0"
+    debugMode:
+      type: boolean
+      example: true
+    supportedLanguages:
+      type: array
+      items:
+          type: string
+          example: "en"
+server:
+  type: object
+  properties:
+    host:
+      type: string
+      example: "localhost"
+    port:
+      type: integer
+      example: 8080
+    useHttps:
+      type: boolean
+      example: true
+    allowedIPs:
+      type: array
+      items:
+          type: string
+          example: "127.0.0.1"
+database:
+  type: object
+  properties:
+    type:
+      type: string
+      example: "mysql"
+    host:
+      type: string
+      example: "db.example.com"
+    port:
+      type: integer
+      example: 3306
+    username:
+      type: string
+      example: "dbuser"
+    password:
+      type: string
+      example: "securepassword"
+    databaseName:
+      type: string
+      example: "myappdb"
+logging:
+  type: object
+  properties:
+    level:
+      type: string
+      example: "info"
+    logToFile:
+      type: boolean
+      example: true
+    logFilePath:
+      type: string
+      example: "/var/log/myapp.log"
+    logFormat:
+      type: string
+      example: "json"
+userPreferences:
+  type: object
+  properties:
+    theme:
+      type: string
+      example: "dark"
+    notifications:
+      type: object
+      properties:
+        email:
+          type: boolean
+          example: true
+        sms:
+          type: boolean
+          example: false
+        push:
+          type: boolean
+          example: true
+    privacySettings:
+      type: object
+      properties:
+        trackLocation:
+          type: boolean
+          example: false
+        shareUsageData:
+          type: boolean
+          example: true 

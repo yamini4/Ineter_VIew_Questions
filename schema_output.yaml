@@ -1,0 +1,39 @@
+id:
+  type: integer
+  example: 1
+firstName:
+  type: string
+  example: "John"
+lastName:
+  type: string
+  example: "Doe"
+email:
+  type: string
+  example: "john.doe@example.com"
+phone:
+  type: string
+  example: "+1-555-123-4567"
+address:
+  type: object
+  properties:
+    street:
+      type: string
+      example: "123 Main St"
+    city:
+      type: string
+      example: "Anytown"
+    state:
+      type: string
+      example: "CA"
+    zipCode:
+      type: string
+      example: "12345"
+    country:
+      type: string
+      example: "USA"
+dateOfBirth:
+  type: string
+  example: "1990-01-01"
+isActive:
+  type: boolean
+  example: True
